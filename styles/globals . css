@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #06060f;
+  --surface: #0e0e1c;
+  --border: #1c1c30;
+  --border2: #252540;
+  --text: #e8e8f2;
+  --muted: #5a5a7a;
+  --accent: #6c47ff;
+  --accent2: #9d7bff;
+  --gold: #f4b740;
+  --green: #22c55e;
+  --red: #ef4444;
+  --orange: #f97316;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: .3; transform: scale(.7); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.fade-up { animation: fadeUp .35s ease forwards; }
+input, textarea, button { font-family: var(--font-body); }
+button { cursor: pointer; border: none; outline: none; }
+input, textarea { outline: none; }
