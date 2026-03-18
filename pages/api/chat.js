@@ -27,7 +27,7 @@ export default async function handler(req, res) {
   if (!isPro && limit.count >= limit.max) {
     return res.status(429).json({
       error: "rate_limit",
-      message: Free plan: ${limit.max} calls per day. Come back tomorrow!,
+      message: "Free plan: " + limit.max + " calls per day. Come back tomorrow!",
       used: limit.count,
       max: limit.max,
     });
