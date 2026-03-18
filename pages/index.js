@@ -93,7 +93,7 @@ const BOOKS = [
       {icon:'✨', name:'Authentic Enthusiasm', desc:'Genuine passion converts.'},
     ]},
 ] 
-onst PERSONAS = [
+const PERSONAS = [
   { id:'us_tech', flag:'🇺🇸', label:'US Tech Founder', desc:'Silicon Valley. Busy, questions ROI',
     system:"You are a busy Silicon Valley startup founder. Use jargon like bandwidth and circle back. Question ROI. Say things like I am swamped. Raise 2 to 3 objections. Respond in 1 to 3 sentences max."},
   { id:'uk_exec', flag:'🇬🇧', label:'UK Business Exec', desc:'Formal, dry wit, hard to read',
