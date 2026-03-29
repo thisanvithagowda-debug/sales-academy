@@ -27,11 +27,11 @@
 
   /* SETUP */
   #setup-screen { align-items: center; justify-content: center; padding: 2rem; background: radial-gradient(ellipse at 50% 0%, rgba(255,107,43,0.15) 0%, transparent 70%); }
-  .logo-area { text-align: center; margin-bottom: 2.5rem; animation: fadeUp 0.8s ease both; }
+  .logo-area { text-align: center; margin-bottom: 2.5rem; animation: none; }
   .logo-area .badge { display: inline-block; background: rgba(255,107,43,0.15); border: 1px solid rgba(255,107,43,0.3); color: var(--accent); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 3px; padding: 6px 16px; border-radius: 20px; margin-bottom: 1.2rem; text-transform: uppercase; }
   .logo-area h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 10vw, 6rem); letter-spacing: 4px; line-height: 0.9; background: linear-gradient(135deg, #fff 40%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
   .logo-area p { color: var(--muted); font-size: 0.95rem; margin-top: 0.8rem; letter-spacing: 1px; }
-  .setup-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; width: 100%; max-width: 440px; animation: fadeUp 0.8s 0.2s ease both; }
+  .setup-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; width: 100%; max-width: 440px; animation: none; }
   .setup-card h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: 2px; margin-bottom: 0.4rem; }
   .setup-card > p { color: var(--muted); font-size: 0.82rem; margin-bottom: 1.5rem; line-height: 1.6; }
   .form-group { margin-bottom: 1rem; }
@@ -53,10 +53,10 @@
   /* HOME */
   #home-screen { padding: 0; }
   .home-content { padding: 1.2rem; flex: 1; overflow-y: auto; padding-bottom: 90px; }
-  .greeting { margin-bottom: 1.5rem; animation: fadeUp 0.5s ease both; }
+  .greeting { margin-bottom: 1.5rem; animation: none; }
   .greeting h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px; line-height: 1; }
   .greeting p { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
-  .level-card { background: linear-gradient(135deg, rgba(255,107,43,0.1), rgba(255,179,71,0.05)); border: 1px solid rgba(255,107,43,0.3); border-radius: 16px; padding: 1.2rem; margin-bottom: 1.2rem; animation: fadeUp 0.5s 0.1s ease both; }
+  .level-card { background: linear-gradient(135deg, rgba(255,107,43,0.1), rgba(255,179,71,0.05)); border: 1px solid rgba(255,107,43,0.3); border-radius: 16px; padding: 1.2rem; margin-bottom: 1.2rem; animation: none; }
   .level-card .level-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; }
   .level-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 2px; color: var(--accent); }
   .level-badge { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--gold); background: rgba(255,215,0,0.1); border: 1px solid rgba(255,215,0,0.3); padding: 3px 8px; border-radius: 8px; }
@@ -64,12 +64,12 @@
   .xp-bar { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 10px; transition: width 0.6s ease; }
   .xp-label { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--muted); margin-top: 5px; font-family: 'JetBrains Mono', monospace; }
   .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 2px; color: var(--muted); margin-bottom: 0.8rem; margin-top: 1.5rem; }
-  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-bottom: 0.5rem; animation: fadeUp 0.5s 0.2s ease both; }
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-bottom: 0.5rem; animation: none; }
   .stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.8rem; text-align: center; }
   .stat-box .stat-icon { font-size: 1.3rem; margin-bottom: 3px; }
   .stat-box .stat-val { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: 1px; }
   .stat-box .stat-lbl { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
-  .scenarios-grid { display: flex; flex-direction: column; gap: 0.8rem; animation: fadeUp 0.5s 0.3s ease both; }
+  .scenarios-grid { display: flex; flex-direction: column; gap: 0.8rem; animation: none; }
   .scenario-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1rem 1.2rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 1rem; position: relative; overflow: hidden; }
   .scenario-card::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 3px; background: var(--accent); opacity: 0; transition: opacity 0.2s; }
   .scenario-card:hover { border-color: var(--accent); transform: translateX(4px); }
@@ -94,7 +94,7 @@
   .call-status-dot.active { background: var(--success); animation: pulse 1.5s infinite; }
   .call-status-dot.recording { background: var(--danger); animation: pulse 1s infinite; }
   .call-body { flex: 1; overflow-y: auto; padding: 1.2rem; display: flex; flex-direction: column; gap: 0.8rem; padding-bottom: 200px; }
-  .prospect-avatar { text-align: center; padding: 1.5rem 0 0.8rem; animation: fadeUp 0.4s ease both; }
+  .prospect-avatar { text-align: center; padding: 1.5rem 0 0.8rem; animation: none; }
   .avatar-circle { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin: 0 auto 0.8rem; border: 3px solid rgba(255,107,43,0.3); position: relative; }
   .avatar-circle.speaking::after { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 2px solid var(--accent); animation: ripple 1.5s infinite; }
   .prospect-avatar h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 2px; }
@@ -201,4 +201,8 @@
 </head>
 <body>
 
-<!-- SETU
+<!-- SETUP -->
+<div id="setup-screen" class="screen active">
+  <div class="logo-area">
+    <div class="badge">🔥 AI-Powered Training</div>
+    <h1>S
